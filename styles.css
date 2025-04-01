@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  --color-custom-blue: #009de2;
+  --color-light-blue: #e1f5fc;
+  --color-light-blue2: #c3eef9;
+  --color-dark-gray: #555555;
+  --color-mid-gray: #d5d5d5;
+  --color-light-gray: #ececec;
+  --color-ligher-gray: #f5f5f5;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-light-blue2);
+}

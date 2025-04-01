@@ -1,0 +1,1524 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Célia JOSSO - Layout prop5</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-dark-gray scroll-smooth">
+    <header class="container w-full mx-auto">
+      <!-- Two rectangles -->
+      <div class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex justify-center">
+        <div class="w-3 h-2 bg-custom-blue"></div>
+        <div class="w-3 h-2 bg-dark-gray"></div>
+      </div>
+
+      <div
+        class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex flex-wrap justify-around pt-4"
+      >
+        <div class="flex flex-row mb-4">
+          <!-- Logo airpassenger -->
+          <div>
+            <div class="p-1 rounded-lg bg-custom-blue mr-3">
+              <i class="ph ph-airplane-takeoff text-white text-4xl"></i>
+            </div>
+          </div>
+          <div>
+            <h1 class="font-bold text-xl">
+              <span class="text-custom-blue">AIR</span>PASSENGER
+            </h1>
+            <h2 class="text-sm">airlines & airports of the world</h2>
+          </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="flex flex-col">
+          <div class="flex flex-row gap-2">
+            <div>FIND</div>
+            <div class="flex flex-col min-w-0">
+              <input
+                type="search"
+                class="border-b-1 border-dark-gray focus:outline-none focus:border-custom-blue"
+              />
+              <div class="text-custom-blue text-xs">
+                WYSSZUKIWANIE ZAAWANSOWANE
+                <i class="ph ph-caret-down text-sm text-dark-gray"></i>
+              </div>
+            </div>
+
+            <i class="text-xl ph ph-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Desktop nav -->
+    <nav
+      class="hidden sm:flex flex-wrap justify-center gap-4 px-4 w-full max-w-7xl mx-auto text-custom-blue py-2"
+    >
+      <a href="#airnews" class="pr-4 border-r border-dark-gray">AIRNEWS</a>
+      <a href="#airtrends" class="pr-4 border-r border-dark-gray">
+        AIRTRENDS
+      </a>
+      <a href="#airchallenges" class="pr-4 border-r border-dark-gray">
+        AIRCHALLENGES
+      </a>
+      <a href="#kontact" class="pr-4">KONTACT</a>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav
+      class="sm:hidden mt-2 grid grid-cols-2 gap-2 w-full mx-auto text-custom-blue text-center py-2"
+    >
+      <a href="#airnews" class="border-r border-dark-gray w-full"> AIRNEWS </a>
+      <a href="#airtrends" class="w-full"> AIRTRENDS </a>
+      <a href="#airchallenges" class="border-r border-dark-gray w-full">
+        AIRCHALLENGES
+      </a>
+      <a href="#kontact" class="w-full"> KONTACT </a>
+    </nav>
+
+    <hr class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto border-dark-gray" />
+
+    <!-- We change the airworld -->
+    <div class="flex flex-col pt-4">
+      <div class="text-center">WE CHANGE THE AIRWORLD</div>
+      <div class="flex flex-row flex-wrap text-2xl gap-4 justify-center">
+        <i class="ph ph-calendar-dots"></i>
+        <i class="ph ph-users"></i>
+        <i class="ph ph-identification-card"></i>
+        <i class="ph ph-share-network"></i>
+        <i class="ph ph-cloud-arrow-up"></i>
+        <i class="ph ph-gauge"></i>
+        <i class="ph ph-chat-text"></i>
+        <i class="ph ph-camera"></i>
+        <i class="ph ph-tag"></i>
+        <i class="ph ph-notebook"></i>
+      </div>
+    </div>
+
+    <!-- Airnews -->
+
+    <!-- Two rectangles -->
+    <div id="airnews" class="relative mt-4">
+      <div
+        class="bg-light-gray absolute h-[calc(100%+15px)] sm:h-[calc(100%+15px)] md:h-[calc(100%+15px)] lg:h-[80%] w-full mx-auto top-0 left-0 z-[-1]"
+      ></div>
+
+      <div class="container mx-auto flex justify-center z-10">
+        <div class="w-3 h-2 bg-custom-blue"></div>
+        <div class="w-3 h-2 bg-dark-gray"></div>
+      </div>
+      <h1 class="underline text-center py-2">
+        AIR<span class="font-bold">NEWS</span>
+      </h1>
+
+      <div class="w-full sm:w-9/10 mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:mb-10 md:mb-10 lg:mb-6"
+        >
+          <!-- Article 1 -->
+          <div class="bg-gray-100 max-w-[400px] mx-auto">
+            <img src="img1.jpg" alt="article image" class="w-full" />
+            <h3 class="underline p-1">2018.11.10</h3>
+            <h2 class="underline p-1 font-bold text-custom-blue">
+              JAKIŚ TYLUŁ WYDARZENIA
+            </h2>
+            <p class="text-xs p-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur sint numquam ducimus culpa autem expedita dolore,
+              commodi, neque tempora molestiae maxime cumque? Aliquam quibusdam,
+              laudantium possimus cupiditate hic saepe dicta! Atque, similique.
+              Ipsum voluptas, ab id culpa pariatur inventore mollitia labore
+              laudantium, distinctio quam debitis! Quisquam rem dolorum
+              voluptatibus aut? Amet consectetur aspernatur quasi dolorum dolore
+              velit, distinctio expedita temporibus. Totam corporis repellendus
+              consequuntur ex ab consequatur, officiis fugiat velit quas in
+              repellat accusamus excepturi quis eius voluptatibus ea, sit
+              voluptates alias libero nisi minima iste! Autem reprehenderit
+              praesentium natus. Ipsam, aut, assumenda optio voluptate quae
+              necessitatibus eaque rem aperiam esse, ipsum nesciunt soluta
+              molestiae! Libero magnam minus veniam alias, quae mollitia
+              cupiditate reprehenderit qui doloremque esse possimus aperiam
+              quaerat. Aliquid id, delectus adipisci expedita voluptas quidem
+              quae, eaque voluptate error modi doloribus vel sunt nisi.
+              Voluptatum quia labore sunt enim cupiditate mollitia itaque
+              dignissimos doloremque repudiandae. Officia, ad laborum.
+            </p>
+            <div
+              class="p-1 flex justify-center items-center text-custom-blue text-xl"
+            >
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="bg-gray-100 max-w-[400px] mx-auto">
+            <img src="img1.jpg" alt="article image" class="w-full" />
+            <h3 class="underline p-1">2018.11.10</h3>
+            <h2 class="underline p-1 font-bold text-custom-blue">
+              JAKIŚ TYLUŁ WYDARZENIA
+            </h2>
+            <p class="text-xs p-1">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              recusandae mollitia aperiam tempore minima eligendi illum
+              temporibus veniam voluptate inventore. Saepe sapiente nihil
+              doloribus impedit tempora asperiores amet quaerat illum. Eius
+              incidunt quae vero consequuntur quod minus facilis dolore, in
+              harum voluptates nam adipisci possimus vel pariatur similique
+              voluptatem fugiat officiis, accusamus veritatis, ipsa corporis.
+              Magnam, voluptatum! Dolorum, omnis numquam. Assumenda possimus
+              aliquam facilis a, aliquid excepturi quos. Eveniet animi fuga
+              alias iure. Sint expedita impedit eos? Molestiae recusandae, amet
+              pariatur mollitia quia iste tenetur quos! Expedita quo quaerat
+              neque. Ducimus, distinctio consequuntur voluptatibus quidem
+              eveniet illum. Quod, dolorem velit! Nulla, nemo atque porro
+              perspiciatis inventore error recusandae aut molestias nostrum unde
+              quasi possimus! Laudantium dolorum molestias explicabo ratione
+              accusamus. Saepe assumenda nostrum vel natus veritatis voluptatem,
+              numquam eligendi nemo, fugit esse eveniet, iusto odio? Ratione
+              facilis praesentium laudantium totam quam accusamus, consequatur
+              sapiente et, mollitia vel adipisci optio quibusdam.
+            </p>
+            <div
+              class="p-1 flex justify-center items-center text-custom-blue text-xl"
+            >
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="bg-gray-100 max-w-[400px] mx-auto">
+            <img src="img1.jpg" alt="article image" class="w-full" />
+            <h3 class="underline p-1">2018.11.10</h3>
+            <h2 class="underline p-1 font-bold text-custom-blue">
+              JAKIŚ TYLUŁ WYDARZENIA
+            </h2>
+            <p class="text-xs p-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              iusto optio, animi facere porro enim illo tempore repellat, quia
+              ullam debitis minima culpa aperiam accusantium. Expedita qui odit
+              sed cupiditate. Incidunt in officia at, delectus qui, quasi
+              accusamus consequatur error eveniet expedita dolore quisquam et
+              corporis eligendi, neque magni itaque rerum! Officia corporis
+              repellendus eaque quibusdam quisquam magni esse dolorum! Ipsa ea
+              vel omnis corporis vero reprehenderit natus quis mollitia ratione
+              aliquam. Repudiandae, dignissimos fuga! Odit molestias soluta quae
+              error illum, deleniti corrupti ad sunt, quasi nihil earum vero
+              possimus. Facilis asperiores iste pariatur officia omnis dolore
+              facere voluptatibus repellat, et vel architecto, eos laudantium
+              consectetur est dignissimos dolor amet, quae nihil aut quod
+              dolorem? Molestias animi porro magni illo? Doloribus velit beatae
+              error expedita enim ducimus, iste perspiciatis! Fugit modi
+              consequuntur rem, accusamus consequatur omnis deserunt optio rerum
+              ipsam nulla cum labore voluptate animi! Rem quis assumenda sed id!
+            </p>
+            <div
+              class="p-1 flex justify-center items-center text-custom-blue text-xl"
+            >
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="bg-gray-100 max-w-[400px] mx-auto">
+            <img src="img1.jpg" alt="article image" class="w-full" />
+            <h3 class="underline p-1">2018.11.10</h3>
+            <h2 class="underline p-1 font-bold text-custom-blue">
+              JAKIŚ TYLUŁ WYDARZENIA
+            </h2>
+            <p class="text-xs p-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quas provident maiores ipsam perspiciatis consequuntur veritatis
+              reprehenderit ratione. Delectus beatae quis vero unde suscipit
+              cupiditate dolor aliquam nesciunt eligendi dolore. Eius possimus
+              consequuntur aut, autem perferendis quaerat asperiores expedita
+              est ipsa culpa illum ducimus quo soluta aspernatur magni sit? Fuga
+              deserunt nostrum quaerat necessitatibus laboriosam dolorem atque
+              impedit maiores recusandae. Accusantium repellendus illo quos
+              deleniti illum, quidem reprehenderit sed molestias dolorem.
+              Explicabo autem laborum vitae, voluptatibus animi pariatur
+              deserunt vel quia cum, illum voluptatem unde recusandae odio,
+              facilis aperiam modi. Nobis deleniti repellendus quia itaque,
+              exercitationem nemo tempora dolorem sunt, assumenda id quam omnis
+              natus nisi quasi ipsum sit quas velit dolores doloremque, alias
+              voluptas iure harum! Quam, accusamus autem. Aliquid eligendi ipsum
+              tempore ipsam recusandae. Debitis nisi voluptates omnis, enim quae
+              eum aut dolorem in, numquam dolorum quod, quibusdam quisquam?
+              Laborum, corrupti. Quia officiis voluptates, quas minus veritatis
+              omnis.
+            </p>
+            <div
+              class="p-1 flex justify-center items-center text-custom-blue text-xl"
+            >
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reklamy -->
+    <div
+      class="bg-mid-gray sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex flex-row justify-around text-white py-3 text-center"
+    >
+      <div>REKLAMY</div>
+      <div>REKLAMY</div>
+      <div class="hidden sm:block">REKLAMY</div>
+      <div class="hidden md:block">REKLAMY</div>
+      <div class="hidden lg:block">REKLAMY</div>
+      <div class="hidden xl:block">REKLAMY</div>
+    </div>
+
+    <!-- Airtrends -->
+    <div
+      id="airtrends"
+      class="relative sm:w-full md:w-9/10 lg:w-9/10 mx-auto my-6"
+    >
+      <img src="img2.jpg" alt="airtrends image" class="w-full mx-auto" />
+
+      <!-- Two rectangles -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 flex justify-center">
+        <div class="w-3 h-2 bg-custom-blue"></div>
+        <div class="w-3 h-2 bg-dark-gray"></div>
+      </div>
+
+      <!-- Desktop AirNews Title -->
+      <h1
+        class="absolute top-4 left-1/2 -translate-x-1/2 underline text-center text-dark-gray hidden sm:block"
+      >
+        AIR<span class="font-bold">TRENDS</span>
+      </h1>
+
+      <!-- Mobile AirNews Title -->
+      <h1
+        class="absolute top-4 left-4 w-1/2 underline text-center text-dark-gray block sm:hidden"
+      >
+        AIR<span class="font-bold">TRENDS</span>
+      </h1>
+
+      <div
+        class="absolute top-10 left-4 w-1/2 max-h-[calc(100%-45px)] overflow-y-auto"
+      >
+        <h2 class="font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </h2>
+        <p class="text-xs">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
+          laudantium aspernatur est deserunt nostrum autem ut aliquid unde
+          labore aut, in sapiente molestiae error ea numquam ipsa, laborum
+          dolores. Qui placeat, maiores nam, accusantium voluptatibus unde
+          obcaecati ipsa porro explicabo dolore doloribus quibusdam dolorum
+          earum aliquid! Aliquam beatae consectetur, ad nam, enim animi
+          blanditiis dolores amet nihil at unde? Molestias soluta possimus alias
+          doloremque quisquam distinctio! Facere nihil voluptate assumenda id
+          officiis ab rerum odit ex voluptatum necessitatibus magni fugiat
+          nesciunt quisquam ipsam excepturi recusandae ullam, similique
+          explicabo illum! Et laboriosam eius vitae architecto rerum pariatur ab
+          mollitia vero suscipit illum debitis animi rem, minima, deserunt, quia
+          velit voluptatibus explicabo quo cupiditate at ullam atque odit porro.
+          Tempora, quibusdam. Itaque impedit dignissimos corporis. Accusamus
+          voluptas totam cupiditate veniam libero ea beatae dolore,
+          necessitatibus dignissimos porro blanditiis fugit deleniti architecto
+          nemo impedit sit, repellat, perferendis ullam! Hic accusantium
+          distinctio voluptas. Consequuntur molestias officiis quod a quam eius
+          nesciunt labore, optio ipsa vel iusto omnis beatae, tempora quibusdam
+          tempore voluptates minima. Ad voluptates ea nisi odit accusantium.
+          Provident explicabo possimus voluptate. Architecto pariatur suscipit
+          eius quas error in deleniti? Itaque quaerat nisi tenetur eum ad
+          provident dolore ullam quae fuga? Voluptatibus laboriosam ducimus
+          quisquam fugit pariatur nobis praesentium maiores numquam quod!
+          Voluptatibus nisi expedita ut consequatur cupiditate quisquam iure
+          dolorem est voluptates dolor, quam beatae saepe voluptatum incidunt
+          quia facere accusamus obcaecati optio autem blanditiis repellendus.
+          Vel quasi autem quae nihil. Excepturi sunt amet eos, distinctio ipsum
+          minima! Voluptatem reprehenderit, tempore necessitatibus distinctio
+          saepe eveniet incidunt excepturi fuga quo fugiat voluptas deserunt
+          porro ducimus laborum! Voluptates eligendi molestiae nam error ea!
+          Dignissimos praesentium commodi, nam consequuntur perferendis deserunt
+          similique aliquam beatae? Velit debitis voluptatibus repellat aperiam
+          omnis tenetur ab delectus. Laboriosam ducimus expedita hic consequatur
+          dicta dolorum rem iusto quis odit!
+        </p>
+        <div class="flex justify-center items-center text-xl text-custom-blue">
+          <i class="ph ph-caret-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reklamy -->
+    <div
+      class="bg-mid-gray sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex flex-row justify-around text-white py-3 text-center"
+    >
+      <div>REKLAMY</div>
+      <div>REKLAMY</div>
+      <div class="hidden sm:block">REKLAMY</div>
+      <div class="hidden md:block">REKLAMY</div>
+      <div class="hidden lg:block">REKLAMY</div>
+      <div class="hidden xl:block">REKLAMY</div>
+    </div>
+
+    <!-- Airtchallenges -->
+    <div
+      id="airchallenges"
+      class="relative sm:w-full md:w-9/10 lg:w-9/10 mx-auto my-6"
+    >
+      <img
+        src="img3.jpg"
+        alt="airchallenges image"
+        class="w-full mx-auto"
+        style="clip-path: polygon(0% 0%, 65% 0%, 55% 100%, 0% 100%)"
+      />
+
+      <!-- Two rectangles -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 flex justify-center">
+        <div class="w-3 h-2 bg-custom-blue"></div>
+        <div class="w-3 h-2 bg-dark-gray"></div>
+      </div>
+
+      <!-- Desktop Airchallenges Title -->
+      <h1
+        class="absolute top-4 left-1/2 -translate-x-1/2 underline text-center text-white hidden sm:block"
+      >
+        AIR<span class="font-bold">TCHALLENGES</span>
+      </h1>
+
+      <!-- Mobile Airchallenges Title -->
+      <h1
+        class="absolute top-4 right-4 w-9/28 underline text-center text-dark-gray block sm:hidden"
+      >
+        AIR<span class="font-bold">TCHALLENGES</span>
+      </h1>
+
+      <div
+        class="absolute top-10 right-4 w-9/28 max-h-[calc(100%-45px)] overflow-y-auto"
+      >
+        <h2 class="font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </h2>
+        <p class="text-xs">
+          dolor sit amet consectetur adipisicing elit. Eveniet magni laudantium
+          aspernatur est deserunt nostrum autem ut aliquid unde labore aut, in
+          sapiente molestiae error ea numquam ipsa, laborum dolores. Qui
+          placeat, maiores nam, accusantium voluptatibus unde obcaecati ipsa
+          porro explicabo dolore doloribus quibusdam dolorum earum aliquid!
+          Aliquam beatae consectetur, ad nam, enim animi blanditiis dolores amet
+          nihil at unde? Molestias soluta possimus alias doloremque quisquam
+          distinctio! Facere nihil voluptate assumenda id officiis ab rerum odit
+          ex voluptatum necessitatibus magni fugiat nesciunt quisquam ipsam
+          excepturi recusandae ullam, similique explicabo illum! Et laboriosam
+          eius vitae architecto rerum pariatur ab mollitia vero suscipit illum
+          debitis animi rem, minima, deserunt, quia velit voluptatibus explicabo
+          quo cupiditate at uLorem ipsumllam atque odit porro. Tempora,
+          quibusdam. Itaque impedit dignissimos corporis. Accusamus voluptas
+          totam cupiditate veniam libero ea beatae dolore, necessitatibus
+          dignissimos porro blanditiis fugit deleniti architecto nemo impedit
+          sit, repellat, perferendis ullam! Hic accusantium distinctio voluptas.
+          Consequuntur molestias officiis quod a quam eius nesciunt labore,
+          optio ipsa vel iusto omnis beatae, tempora quibusdam tempore
+          voluptates minima. Ad voluptates ea nisi odit accusantium. Provident
+          explicabo possimus voluptate. Architecto pariatur suscipit eius quas
+          error in deleniti? Itaque quaerat nisi tenetur eum ad provident dolore
+          ullam quae fuga? Voluptatibus laboriosam ducimus quisquam fugit
+          pariatur nobis praesentium maiores numquam quod! Voluptatibus nisi
+          expedita ut consequatur cupiditate quisquam iure dolorem est
+          voluptates dolor, quam beatae saepe voluptatum incidunt quia facere
+          accusamus obcaecati optio autem blanditiis repellendus. Vel quasi
+          autem quae nihil. Excepturi sunt amet eos, distinctio ipsum minima!
+          Voluptatem reprehenderit, tempore necessitatibus distinctio saepe
+          eveniet incidunt excepturi fuga quo fugiat voluptas deserunt porro
+          ducimus laborum! Voluptates eligendi molestiae nam error ea!
+          Dignissimos praesentium commodi, nam consequuntur perferendis deserunt
+          similique aliquam beatae? Velit debitis voluptatibus repellat aperiam
+          omnis tenetur ab delectus. Laboriosam ducimus expedita hic consequatur
+          dicta dolorum rem iusto quis odit!
+        </p>
+      </div>
+    </div>
+
+    <!-- Reklamy -->
+    <div
+      class="bg-mid-gray sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex flex-row justify-around text-white py-3 text-center"
+    >
+      <div>REKLAMY</div>
+      <div>REKLAMY</div>
+      <div class="hidden sm:block">REKLAMY</div>
+      <div class="hidden md:block">REKLAMY</div>
+      <div class="hidden lg:block">REKLAMY</div>
+      <div class="hidden xl:block">REKLAMY</div>
+    </div>
+
+    <div id="kontact" class="bg-light-blue pb-4 mt-6">
+      <!-- Desktop Kontact Section -->
+      <div class="hidden lg:block w-9/10 mx-auto text-center">
+        <div class="overflow-x-auto">
+          <table
+            class="w-full border-collapse border-gray-300 text-xs bg-white"
+          >
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="border">
+                  <p class="font-bold text-sm underline py-2">
+                    European LCC Airlines
+                  </p>
+                  <p>Free-hand Luggage 01 November 2018</p>
+                </th>
+                <th class="border">Airline</th>
+                <th class="border">Weight</th>
+                <th class="border">
+                  126cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />56x45x25
+                </th>
+                <th class="border">
+                  121cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />56x40x25
+                </th>
+                <th class="border">
+                  120cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />55x40x25
+                </th>
+                <th class="border">
+                  118cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />55x43x20
+                </th>
+                <th class="border">
+                  115cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />55x40x23
+                </th>
+                <th class="border">
+                  115cm<br /><i class="ph ph-suitcase text-2xl"></i
+                  ><br />55x35x25
+                </th>
+                <th class="border">Extra Fee</th>
+                <th class="border">Personal Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border">1</td>
+                <td class="border">BLUE AIR</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border">X</td>
+                <td class="border"></td>
+                <td class="border">65€</td>
+                <td class="border">...</td>
+              </tr>
+              <tr>
+                <td class="border">2</td>
+                <td class="border">EASYJET</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">3</td>
+                <td class="border">ERNEST</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">4</td>
+                <td class="border">EUROWINGS</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">5</td>
+                <td class="border">FLYONE</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">6</td>
+                <td class="border">JET2.COM</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">7</td>
+                <td class="border">LEVEL</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">8</td>
+                <td class="border">NORVEGIAN AIR</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">9</td>
+                <td class="border">ONUR AIR</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">10</td>
+                <td class="border">PEGASUS</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">11</td>
+                <td class="border">POBEBA</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">12</td>
+                <td class="border">RYANAIR & LAUDA</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">13</td>
+                <td class="border">SKYUP (*)</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">14</td>
+                <td class="border">SMARTWINGS (*)</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">15</td>
+                <td class="border">TRANSAVIA</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">16</td>
+                <td class="border">TUIFLY (*)</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">17</td>
+                <td class="border">VOLOTEA (*)</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">18</td>
+                <td class="border">VUELING</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">19</td>
+                <td class="border">WIZZAIR</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+              <tr>
+                <td class="border">20</td>
+                <td class="border">WOW AIR</td>
+                <td class="border">10 kg</td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+                <td class="border"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Mobile Kontact Section -->
+      <h1 class="text-center text-dark-gray lg:hidden underline font-bold pt-2">
+        European LCC Airlines
+      </h1>
+      <p class="text-center text-dark-gray lg:hidden text-sm pb-4">
+        Free-hand Luggage 01 November 2018
+      </p>
+      <div
+        class="flex flex-wrap justify-between lg:hidden w-9/10 mx-auto gap-4"
+      >
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">1. BLUE AIR</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">2. EASYJET</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">3. ERNEST</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">4. EUROWINGS</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">5. FLYONE</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">6. JET2.COM</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">7. LEVEL</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">8. NOVERGIAN AIR</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">9. ONUR AIR</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">10. PEGASUS</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">11. POBEBA</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">12. RYANAIR & LAUDA</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">13. SKYUP (µ)</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">14. SMARTWINGS (*)</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">15. TRANSAVIA</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">16. TUIFLY (*)</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">17. VOLOTEA</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">18. VUELING</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">19. WIZZAIR</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+
+        <!-- Airline Card -->
+        <div class="bg-white p-2 max-w-[300px] mx-auto">
+          <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <h3 class="font-bold">20. WOW AIR</h3>
+            <span class="bg-custom-blue text-white px-2 py-1 rounded text-xs"
+              >10 kg</span
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <div class="text-gray-600">Size 126cm (56x45x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 121cm (56x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 120cm (55x40x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 118cm (55x43x20):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Size 115cm (55x40x23):</div>
+            <div class="text-right font-bold text-custom-blue">X</div>
+
+            <div class="text-gray-600">Size 115cm (55x35x25):</div>
+            <div class="text-right"></div>
+
+            <div class="text-gray-600">Extra Fee:</div>
+            <div class="text-right font-bold">65€</div>
+
+            <div class="text-gray-600">Personal Item:</div>
+            <div class="text-right">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-dark-gray p-3 flex flex-col md:flex-row justify-around items-center text-white"
+    >
+      <!-- Logo Airpassenger-->
+      <div class="flex-1 flex flex-row items-center justify-center mb-4">
+        <div class="p-1 rounded-lg bg-white mr-3 text-custom-blue text-4xl">
+          <i class="ph ph-airplane-takeoff"></i>
+        </div>
+        <div class="">
+          <h1 class="font-bold">AIRPASSENGER</h1>
+          <h2 class="text-xs">airlines & airports of the world</h2>
+        </div>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav
+        class="flex-1 hidden lg:flex flex-wrap justify-center gap-4 px-4 text-xs"
+      >
+        <a href="#airnews" class="pr-4 border-r border-white">AIRNEWS</a>
+        <a href="#airtrends" class="pr-4 border-r border-white">AIRTRENDS</a>
+        <a href="#airchallenges" class="pr-4 border-r border-white"
+          >AIRCHALLENGES</a
+        >
+        <a href="#kontact" class="pr-4">KONTACT</a>
+      </nav>
+
+      <!-- Mobile nav -->
+      <nav class="lg:hidden grid grid-cols-2 gap-4 px-4 w-full mx-auto text-xs">
+        <a href="#airnews" class="pr-4 border-r border-white w-full text-center"
+          >AIRNEWS</a
+        >
+        <a href="#airtrends" class="pr-4 w-full text-center">AIRTRENDS</a>
+        <a
+          href="#airchallenges"
+          class="pr-4 border-r border-white w-full text-center"
+          >AIRCHALLENGES</a
+        >
+        <a href="#kontact" class="pr-4 w-full text-center">KONTACT</a>
+      </nav>
+    </footer>
+  </body>
+</html>
