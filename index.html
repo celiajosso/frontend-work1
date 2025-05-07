@@ -1,6 +1,6 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zxx" class="scroll-smooth scroll-pt-47">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,80 +14,85 @@
       rel="stylesheet"
     />
   </head>
-  <body class="text-dark-gray scroll-smooth">
-    <header class="container w-full mx-auto">
-      <!-- Two rectangles -->
-      <div class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex justify-center">
-        <div class="w-3 h-2 bg-custom-blue"></div>
-        <div class="w-3 h-2 bg-dark-gray"></div>
-      </div>
-
-      <div
-        class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto flex flex-wrap justify-around pt-4"
-      >
-        <div class="flex flex-row mb-4">
-          <!-- Logo airpassenger -->
-          <div>
-            <div class="p-1 rounded-lg bg-custom-blue mr-3">
-              <i class="ph ph-airplane-takeoff text-white text-4xl"></i>
-            </div>
-          </div>
-          <div>
-            <h1 class="font-bold text-xl">
-              <span class="text-custom-blue">AIR</span>PASSENGER
-            </h1>
-            <h2 class="text-sm">airlines & airports of the world</h2>
-          </div>
+  <body class="text-dark-gray">
+    <header class="w-full fixed top-0 z-10 bg-white border-b border-dark-gray">
+      <div class="container mx-auto">
+        <!-- Two rectangles -->
+        <div class="w-full flex justify-center">
+          <div class="w-3 h-2 bg-custom-blue"></div>
+          <div class="w-3 h-2 bg-dark-gray"></div>
         </div>
-
-        <!-- search bar -->
-        <div class="flex flex-col">
-          <div class="flex flex-row gap-2">
-            <div>FIND</div>
-            <div class="flex flex-col min-w-0">
-              <input
-                type="search"
-                class="border-b-1 border-dark-gray focus:outline-none focus:border-custom-blue"
-              />
-              <div class="text-custom-blue text-xs">
-                WYSSZUKIWANIE ZAAWANSOWANE
-                <i class="ph ph-caret-down text-sm text-dark-gray"></i>
+  
+        <div class="w-full flex flex-wrap justify-around items-center pt-4">
+          <!-- Logo -->
+          <div class="flex flex-row mb-4 w-1/2 sm:w-3/4 md:w-3/4 lg:w-1/2 items-center justify-center">
+            <div>
+              <div class="p-1 rounded-lg bg-custom-blue mr-3">
+                <i class="ph ph-airplane-takeoff text-white text-4xl"></i>
               </div>
             </div>
-
-            <i class="text-xl ph ph-magnifying-glass"></i>
+            <div>
+              <h1 class="font-bold text-xl">
+                <span class="text-custom-blue">AIR</span>PASSENGER
+              </h1>
+              <h2 class="text-[10px] sm:text-sm md:text-sm lg:text-sm">
+                airlines & airports of the world
+              </h2>
+            </div>
+          </div>
+  
+          <div class="sm:w-1/4 md:w-1/4 flex justify-between items-center">
+            <!-- Desktop nav -->
+            <nav class="hidden lg:flex justify-center gap-2 w-full max-w-7xl mx-auto text-custom-blue text-sm">
+              <a href="#airnews" class="pr-2 border-r border-dark-gray">AIRNEWS</a>
+              <a href="#airtrends" class="pr-2 border-r border-dark-gray">AIRTRENDS</a>
+              <a href="#airchallenges" class="pr-2 border-r border-dark-gray">AIRCHALLENGES</a>
+              <a href="#kontact" class="pr-2 ">KONTACT</a>
+            </nav>
+  
+            <!-- Burger Button -->
+            <label for="menu-toggle" class="lg:hidden cursor-pointer flex items-center justify-center p-2 mb-2">
+              <div class="space-y-1">
+                <span class="block w-6 h-0.5 bg-custom-blue"></span>
+                <span class="block w-6 h-0.5 bg-custom-blue"></span>
+                <span class="block w-6 h-0.5 bg-custom-blue"></span>
+              </div>
+            </label>
           </div>
         </div>
       </div>
     </header>
-
-    <!-- Desktop nav -->
-    <nav
-      class="hidden sm:flex flex-wrap justify-center gap-4 px-4 w-full max-w-7xl mx-auto text-custom-blue py-2"
-    >
-      <a href="#airnews" class="pr-4 border-r border-dark-gray">AIRNEWS</a>
-      <a href="#airtrends" class="pr-4 border-r border-dark-gray">
-        AIRTRENDS
-      </a>
-      <a href="#airchallenges" class="pr-4 border-r border-dark-gray">
-        AIRCHALLENGES
-      </a>
-      <a href="#kontact" class="pr-4">KONTACT</a>
+  
+    <div>
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+  
+    <nav class="fixed top-22 left-0 md:hidden peer-checked:flex hidden flex-col items-center w-full text-custom-blue text-center text-xs bg-white z-20">
+      <a href="#airnews" class="border-y border-dark-gray w-full py-1">AIRNEWS</a>
+      <a href="#airtrends" class="border-b border-dark-gray w-full py-1">AIRTRENDS</a>
+      <a href="#airchallenges" class="border-b border-dark-gray w-full py-1">AIRCHALLENGES</a>
+      <a href="#kontact" class="border-b border-dark-gray w-full py-1">KONTACT</a>
     </nav>
+  
+  <div class="pt-22">
+    <!-- search bar -->
+    <div class="flex flex-col justify-center items-center mt-4">
+      <div class="flex flex-row gap-2">
+        <div>FIND</div>
+        <div class="flex flex-col min-w-0">
+          <input
+            type="search"
+            class="border-b-1 border-dark-gray focus:outline-none focus:border-custom-blue"
+          />
+          <div class="text-custom-blue text-xs">
+            WYSSZUKIWANIE ZAAWANSOWANE
+            <i class="ph ph-caret-down text-sm text-dark-gray"></i>
+          </div>
+        </div>
 
-    <!-- Mobile nav -->
-    <nav
-      class="sm:hidden mt-2 grid grid-cols-2 gap-2 w-full mx-auto text-custom-blue text-center py-2"
-    >
-      <a href="#airnews" class="border-r border-dark-gray w-full"> AIRNEWS </a>
-      <a href="#airtrends" class="w-full"> AIRTRENDS </a>
-      <a href="#airchallenges" class="border-r border-dark-gray w-full">
-        AIRCHALLENGES
-      </a>
-      <a href="#kontact" class="w-full"> KONTACT </a>
-    </nav>
-
-    <hr class="sm:w-full md:w-9/10 lg:w-9/10 mx-auto border-dark-gray" />
+        <i class="text-xl ph ph-magnifying-glass"></i>
+      </div>
+    </div>
 
     <!-- We change the airworld -->
     <div class="flex flex-col pt-4">
@@ -1520,5 +1525,6 @@
         <a href="#kontact" class="pr-4 w-full text-center">KONTACT</a>
       </nav>
     </footer>
+  </div>
   </body>
 </html>
