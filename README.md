@@ -1,10 +1,12 @@
-# Frontend work1 Layout 5
+# Frontend work 1: Layout 5 (html/css)
 
-## Commands (in the root)
+## Commands
 
 ```
 npm install
 npm run dev
 ```
 
-Open `localhost:5173` (or the other port suggested in the logs if already taken)
+## Navigation
+
+Open `localhost:5173`
